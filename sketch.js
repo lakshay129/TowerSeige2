@@ -51,6 +51,7 @@ function setup(){
     box25 = new Box(1000,350,30,50,PI/2);
     //
     //box16
+    
     box27 = new Box(790,300,30,50,PI);
     box28 = new Box(790,350,30,50,PI);
     box29 = new Box(790,400,30,50,PI);
@@ -73,6 +74,7 @@ function draw(){
     box4.display();
     box5.display();
     //
+    
     box6.display();
     box7.display();
     box8.display();
@@ -80,6 +82,7 @@ function draw(){
     box10.display();
     //
     //box11
+    
     box12. display();
     box13 . display();
     box14 . display();
@@ -117,3 +120,11 @@ function mouseReleased(){
     string.fly();
     
 }
+
+function keyPressed(){
+    if(keyCode===32){
+    string.attach(polygon1.body);
+   }
+}  
+ 
+ 
