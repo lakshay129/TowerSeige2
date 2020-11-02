@@ -15,8 +15,7 @@ function setup(){
     world = engine.world;
 
 
-    ground1 = new Ground(700,500,300,20);
-    ground2 = new Ground(950,400,200,20);
+ 
   
     polygon1=new polygon(200,500,50,50)
 
@@ -57,6 +56,9 @@ function setup(){
     box29 = new Box(790,400,30,50,PI);
     box30 = new Box(790,450,30,50,PI);
 
+    ground1 = new Ground(700,500,300,20);
+    ground2 = new Ground(950,400,200,20);
+
     string= new wire(polygon1.body,{x:200, y:500});
     
 }
@@ -65,9 +67,11 @@ function draw(){
     background("pink");
     Engine.update(engine);
     
-     polygon1.display();
+    polygon1.display();
+
     ground1.display();
     ground2.display();
+    
     box1.display();
     box2.display();
     box3.display();
